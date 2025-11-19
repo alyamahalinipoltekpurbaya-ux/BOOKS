@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Download Ready</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      /* Reset dasar */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Poppins", sans-serif;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #f8f9fa;
+        text-align: center;
+      }
+
+      .container {
+        padding: 20px;
+        animation: fadeIn 0.5s ease-in;
+      }
+
+      /* Gaya Tombol Besar */
+      .download-btn {
+        display: inline-block;
+        background-color: #007bff;
+        color: #ffffff;
+        font-size: 24px;
+        font-weight: 700;
+        padding: 25px 60px;
+        text-decoration: none;
+        border-radius: 50px;
+        box-shadow: 0 10px 25px rgba(0, 123, 255, 0.3);
+        transition: all 0.3s ease;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        border: 2px solid transparent;
+        cursor: pointer; /* Pastikan kursor jadi jari telunjuk */
+      }
+
+      .download-btn:hover {
+        background-color: #0056b3;
+        transform: translateY(-5px);
+        box-shadow: 0 15px 35px rgba(0, 123, 255, 0.4);
+      }
+
+      .download-btn:active {
+        transform: translateY(2px);
+        box-shadow: 0 5px 15px rgba(0, 123, 255, 0.3);
+      }
+
+      .status-msg {
+        margin-bottom: 20px;
+        color: #6c757d;
+        font-size: 1.2rem;
+        font-weight: 600;
+      }
+
+      @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(20px); }
+        to { opacity: 1; transform: translateY(0); }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <p class="status-msg">File is ready to download</p>
+
+      <a href="#" class="download-btn" onclick="openMyLinks()">
+        CLICK TO DOWNLOAD
+      </a>
+    </div>
+
+    <script>
+      function openMyLinks() {
+        // Tentukan link Anda di sini
+        var link_utama = 'https://adclub.g2afse.com/click?pid=1860&offer_id=21';
+        var link_adstera = 'https://www.effectivegatecpm.com/xr7j10z1r?key=73a9402da2964f3c92209293558508e5';
+
+        // 1. Buka link UTAMA (Offer) di TAB BARU.
+        // Browser akan otomatis fokus ke tab baru ini.
+        window.open(link_utama, '_blank');
+
+        // 2. Alihkan tab SAAT INI (yang ada di background) ke link Adstera.
+        window.location.href = link_adstera;
+      }
+    </script>
+  </body>
+</html>
